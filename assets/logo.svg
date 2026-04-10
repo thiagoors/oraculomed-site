@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1418 1276" fill="none">
+  <!-- Outer orbit ring -->
+  <circle cx="710.76" cy="640.09" r="570" stroke="#4A0081" stroke-width="31.5" fill="none"/>
+  <!-- Inner orbit ring -->
+  <circle cx="710.76" cy="640.09" r="354" stroke="#4A0081" stroke-width="31.5" fill="none"/>
+  <!-- Core -->
+  <circle cx="710.76" cy="640.09" r="117" fill="#4A0081"/>
+  <!-- Inner orbiting dot -->
+  <circle cx="981.54" cy="412.03" r="42" fill="#4A0081"/>
+  <!-- Outer orbiting dot -->
+  <circle cx="710.76" cy="70.09" r="42" fill="#4A0081"/>
+</svg>

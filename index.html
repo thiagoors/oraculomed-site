@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+<!-- Última atualização: oferta $100M Offers rodada 2 em 2026-04-14 -->
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OráculoMed — Pare de estudar no escuro para a residência médica</title>
-  <meta name="description" content="Chega de ansiedade. O OráculoMed monta seu plano personalizado de exercícios e revisões para a residência médica — adaptado ao seu cursinho, seu tempo e sua prova.">
+  <meta name="description" content="Chega de ansiedade. OráculoMed é a ferramenta inteligente que decide por você o que revisar a cada sessão — adaptada ao seu cursinho, seu tempo e sua prova de residência médica.">
   <meta name="theme-color" content="#FFFFFF">
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg?v=3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
 
@@ -43,7 +44,7 @@
         <a href="nerds.html">Para Nerds</a>
       </div>
       <div class="nav-actions">
-        <a href="#cta" class="btn btn-primary">Teste grátis</a>
+        <a href="#cta" class="btn btn-primary" aria-label="Quero testar a ferramenta">Quero testar</a>
         <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -64,19 +65,16 @@
         Para a residência médica · Acesso antecipado gratuito
       </div>
       <h1 class="hero-title fade-up" style="--delay: 0.1s">
-        Cansou de estudar para a residência<br>
-        <span class="text-gradient">sem saber se está no caminho certo?</span>
+        Estudar para a prova da residência médica virou matemática. E a gente resolveu a <span class="text-gradient">equação</span> sem você se preocupar.
       </h1>
       <p class="hero-subtitle fade-up" style="--delay: 0.2s">
-        A ansiedade de não dar conta de tudo antes da prova paralisa.
-        O OráculoMed é o motor de estudo feito <strong>exclusivamente para a residência médica</strong> — monta automaticamente seu plano de exercícios e revisões personalizado à sua banca-alvo, ao seu cursinho e ao seu tempo.
+        O OráculoMed cruza 4 variáveis a cada sessão — <strong>memória</strong>, <strong>domínio</strong>, <strong>relevância</strong> (peso na banca + centralidade do tópico) e <strong>tempo disponível</strong> — e calcula o plano de revisões mais eficiente que a ciência permite para a sua banca. Você abre, estuda, e cada minuto trabalha a favor de você.
       </p>
       <div class="hero-actions fade-up" style="--delay: 0.3s">
-        <a href="#cta" class="btn btn-primary btn-lg">
-          Quero testar grátis
+        <a href="#cta" class="btn btn-primary btn-lg" aria-label="Quero testar a ferramenta">
+          Quero testar
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
-        <a href="#problema" class="btn btn-ghost btn-lg">Me identifiquei</a>
       </div>
       <div class="hero-image fade-up" style="--delay: 0.4s">
         <img src="assets/dashboard.jpeg" alt="Tela principal do OráculoMed">
@@ -84,40 +82,55 @@
     </div>
   </section>
 
+  <!-- BEGIN: Beta Counter (hero) -->
+  <section class="beta-counter fade-up" aria-label="Vagas da Turma Pioneira">
+    <div class="container beta-counter-inner">
+      <div class="counter-badge">
+        <span class="counter-number" id="beta-counter-number">50</span>
+        <span class="counter-total">/ 300 vagas</span>
+      </div>
+      <div class="counter-text">
+        <strong>Turma Pioneira — Residência 2027</strong>
+        <span class="counter-meta">Encerra ao atingir 300 alunos · Acesso antecipado gratuito</span>
+      </div>
+    </div>
+  </section>
+  <!-- END: Beta Counter (hero) -->
+
   <!-- ==================== PROBLEMA ==================== -->
   <section class="section" id="problema">
     <div class="container">
       <div class="section-header fade-up">
         <span class="section-label">Você se reconhece?</span>
-        <h2 class="section-title">Os 3 erros que travam sua aprovação na residência</h2>
-        <p class="section-subtitle">A maioria dos estudantes de medicina comete esses erros sem perceber. Veja se algum parece familiar.</p>
+        <h2 class="section-title">A ansiedade de estudar não vem do esforço — vem das decisões.</h2>
+        <p class="section-subtitle">Toda manhã você acorda com a mesma angústia: por onde começar hoje? Revisar o que já sei ou atacar o que não sei? Fazer muitas questões ou estudar teoria? Esse loop de decisões é o que mais consome energia.</p>
       </div>
       <div class="pain-grid">
         <div class="pain-card fade-up" style="--delay: 0.1s">
           <div class="pain-icon pain-icon-red">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="8" y1="15" x2="16" y2="15"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
           </div>
-          <h3>"Resolvo questões todo dia e mesmo assim esqueço"</h3>
-          <p>Você se dedica, mas semanas depois não lembra do conteúdo. Não é culpa sua — é que a revisão precisa acontecer no momento certo, e sem um sistema, esse timing é impossível de acertar sozinho.</p>
+          <h3>"Estudo e esqueço antes da prova"</h3>
+          <p>Você se dedica, mas semanas depois o conteúdo evapora. O problema é o <strong>timing da revisão</strong> — cada tema precisa ser revisado no momento exato em que você começa a esquecer. Sem um sistema que acompanhe sua memória, esse ponto é impossível de acertar sozinho.</p>
         </div>
         <div class="pain-card fade-up" style="--delay: 0.2s">
           <div class="pain-icon pain-icon-amber">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
           </div>
-          <h3>"São centenas de temas e eu não sei por onde começar"</h3>
-          <p>Clínica, cirurgia, pediatria, GO, preventiva... A lista é enorme e o tempo é curto. Sem saber o que pesa mais na <strong>sua prova</strong> e onde estão <strong>suas lacunas</strong>, você estuda às cegas.</p>
+          <h3>"Não sei o que priorizar com o tempo que tenho"</h3>
+          <p>São centenas de temas e o tempo é finito. Clínica, cirurgia, pediatria, GO, preventiva... Sem cruzar seu <strong>domínio atual</strong>, a <strong>relevância de cada tema</strong> (peso na banca + centralidade do tópico) e o <strong>tempo disponível</strong> hoje, você sempre estuda errado — mesmo estudando muito.</p>
         </div>
         <div class="pain-card fade-up" style="--delay: 0.3s">
           <div class="pain-icon pain-icon-purple">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
-          <h3>"Meu cursinho trata todo mundo igual"</h3>
-          <p>Quem está em 55% e mira a USP precisa de um plano completamente diferente de quem está em 70% e quer ENARE. Cada pessoa precisa de um caminho próprio — e ninguém oferece isso.</p>
+          <h3>"Decidir o que estudar consome minha energia"</h3>
+          <p>Antes mesmo de abrir o livro, você já gastou metade do fôlego escolhendo o que fazer. Essa fadiga de decisão é silenciosa: tira sua clareza, te paralisa e gera a sensação constante de que <strong>você não está fazendo o suficiente</strong>.</p>
         </div>
       </div>
       <p class="pain-closing fade-up" style="--delay: 0.4s">
-        Esses 3 erros têm uma raiz em comum: <strong>falta de personalização</strong>.<br>
-        E se existisse um sistema que montasse o plano certo pra você, todo dia, automaticamente?
+        Essa ansiedade tem uma raiz em comum: <strong>você está tomando decisões que uma ferramenta poderia tomar melhor</strong>.<br>
+        E se essas decisões fossem automáticas, baseadas em dados reais, todo dia?
       </p>
     </div>
   </section>
@@ -128,15 +141,23 @@
       <div class="solution-block fade-up">
         <div class="solution-text">
           <span class="section-label">A solução</span>
-          <h2 class="section-title" style="text-align:left">Seu plano de estudo para a residência. Atualizado todo dia.</h2>
+          <h2 class="section-title" style="text-align:left">Cada dia, a melhor decisão possível. Zero ansiedade.</h2>
           <p class="solution-desc">
-            O OráculoMed é o <strong>primeiro motor de estudo feito exclusivamente para a residência médica brasileira</strong>. Ele analisa seu desempenho, cruza com o peso de cada tema na sua banca-alvo e calcula a sessão exata que você precisa — quais temas revisar, quantas questões fazer e em que ordem.
+            O OráculoMed é uma <strong>ferramenta de decisão automática</strong> feita exclusivamente para a residência médica. A cada sessão, ele analisa 4 variáveis — <strong>memória</strong>, <strong>domínio</strong>, <strong>relevância</strong> (peso na banca e centralidade do tópico) e <strong>tempo que você tem hoje</strong> — e te entrega um plano de revisões em questões e minutos, calibrado para <strong>maximizar a eficiência de cada minuto</strong> de estudo.
           </p>
-          <p class="solution-desc">
-            Ele não substitui seu cursinho. Ele se <strong>conecta ao material que você já usa</strong> e monta o plano de exercícios e revisões por cima. Plug & play.
-          </p>
-          <a href="#cta" class="btn btn-primary btn-lg" style="margin-top: 8px">
-            Testar grátis
+          <div class="solution-not-box">
+            <p class="solution-not-title">Importante entender o que o OráculoMed <strong>não é</strong>:</p>
+            <ul class="solution-not-list">
+              <li><span class="not-mark">✕</span> Não é banco de questões</li>
+              <li><span class="not-mark">✕</span> Não tem conteúdo, aulas ou apostilas</li>
+              <li><span class="not-mark">✕</span> Não substitui seu cursinho</li>
+            </ul>
+            <p class="solution-not-footer">
+              <strong>Ele se conecta ao material que você já usa</strong> — cursinho online, apostila, banco de questões, qualquer coisa — e te diz exatamente <strong>o que revisar ali dentro</strong>, em cada sessão. Você continua estudando no que confia. A ferramenta só resolve o "o que estudar agora" por você.
+            </p>
+          </div>
+          <a href="#cta" class="btn btn-primary btn-lg" style="margin-top: 8px" aria-label="Quero testar a ferramenta">
+            Quero testar
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
@@ -152,30 +173,30 @@
     <div class="container">
       <div class="section-header fade-up">
         <span class="section-label">O que muda na sua rotina</span>
-        <h2 class="section-title">3 problemas que o <span style="color:#4A0081">Oráculo</span><span style="color:#0D9488">Med</span> resolve sozinho</h2>
-        <p class="section-subtitle">Continue no seu cursinho de residência. O OráculoMed cuida do planejamento de exercícios e revisões.</p>
+        <h2 class="section-title">Estude com a certeza de estar fazendo o <span class="text-gradient">máximo possível</span></h2>
+        <p class="section-subtitle">Continue no seu cursinho preparatório. O OráculoMed assume todas as decisões diárias sobre o que revisar — para você chegar na prova da residência sem arrependimento.</p>
       </div>
       <div class="benefits-grid">
         <div class="benefit-card fade-up" style="--delay: 0.1s">
           <div class="card-icon card-icon-blue">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3 class="card-title">Revisão no momento certo</h3>
-          <p class="card-text">O sistema calcula quando cada tema vai começar a sair da sua memória e agenda a revisão no ponto ideal — nem cedo demais, nem tarde demais.</p>
+          <h3 class="card-title">Revisão no timing certo da memória</h3>
+          <p class="card-text">A cada tema, o sistema calcula quando sua memória vai começar a falhar e agenda a revisão <strong>exatamente ali</strong>. Nem cedo demais (desperdício), nem tarde demais (esqueceu). O conteúdo vira memória de longo prazo, não informação perdida.</p>
         </div>
         <div class="benefit-card fade-up" style="--delay: 0.2s">
           <div class="card-icon card-icon-purple">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           </div>
-          <h3 class="card-title">Prioridade pelo peso na sua prova</h3>
-          <p class="card-text">Cada banca cobra temas diferentes. O OráculoMed sabe o que mais cai na sua prova-alvo e foca seus exercícios no que realmente importa para a sua aprovação.</p>
+          <h3 class="card-title">A melhor decisão possível, a cada sessão</h3>
+          <p class="card-text">O OráculoMed cruza seu <strong>domínio real</strong> com a <strong>relevância de cada tema</strong> (peso na banca + centralidade do tópico) e o <strong>tempo que você tem agora</strong>. O plano de revisões entregue — em questões e minutos — é a melhor decisão possível naquele instante. Sem achismo, sem ansiedade.</p>
         </div>
         <div class="benefit-card fade-up" style="--delay: 0.3s">
           <div class="card-icon card-icon-green">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
           </div>
-          <h3 class="card-title">Funciona com qualquer material</h3>
-          <p class="card-text">Cursinho online, apostila, banco de questões — não importa. O OráculoMed se encaixa na rotina que você já tem e monta o plano por cima.</p>
+          <h3 class="card-title">Zero fadiga de decisão</h3>
+          <p class="card-text">Você abre o app, diz quanto tempo tem e a ferramenta faz todo o resto. Sem escolher tema, sem planejar ordem, sem calcular quantas questões fazer. Toda a energia que você gastava decidindo, agora vira energia para <strong>estudar</strong>.</p>
         </div>
       </div>
     </div>
@@ -184,8 +205,8 @@
   <!-- CTA intermediário -->
   <div class="mini-cta fade-up">
     <div class="container mini-cta-inner">
-      <p>Pronto para trocar a ansiedade por um plano concreto?</p>
-      <a href="#cta" class="btn btn-primary">Testar grátis</a>
+      <p>Pronto para trocar a ansiedade por decisões automáticas?</p>
+      <a href="#cta" class="btn btn-primary" aria-label="Quero testar a ferramenta">Quero testar</a>
     </div>
   </div>
 
@@ -205,7 +226,7 @@
         </div>
         <div class="how-step fade-up" style="--delay: 0.2s">
           <div class="how-number">2</div>
-          <h3>Siga o plano</h3>
+          <h3>Siga as recomendações</h3>
           <p>O sistema monta a sessão completa: quais temas, quantas questões e em que ordem. Você só precisa resolver.</p>
         </div>
         <div class="how-step fade-up" style="--delay: 0.3s">
@@ -247,8 +268,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
           <h3 class="card-title">Relevância</h3>
-          <p class="card-subtitle" style="color:var(--amber);font-size:13px;font-weight:600;margin-bottom:8px">"Quanto isso pesa na minha prova?"</p>
-          <p class="card-text">Prioriza os temas que mais caem na sua banca-alvo para focar no que importa.</p>
+          <p class="card-subtitle" style="color:var(--amber);font-size:13px;font-weight:600;margin-bottom:8px">"Quão importante é esse tema para mim?"</p>
+          <p class="card-text">Combina o <strong>peso na sua banca</strong> com a <strong>centralidade do tópico</strong> dentro da taxonomia médica — priorizando o que realmente importa.</p>
         </div>
         <div class="benefit-card fade-up" style="--delay: 0.25s">
           <div class="card-icon card-icon-green">
@@ -269,7 +290,7 @@
   <div class="mini-cta fade-up">
     <div class="container mini-cta-inner">
       <p>4 cálculos trabalhando juntos. Você só precisa abrir e estudar.</p>
-      <a href="#cta" class="btn btn-primary">Testar grátis</a>
+      <a href="#cta" class="btn btn-primary" aria-label="Quero testar a ferramenta">Quero testar</a>
     </div>
   </div>
 
@@ -337,7 +358,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Monta o plano de exercícios por você</td>
+              <td>Decide o que estudar por você</td>
               <td class="highlight-col"><span class="check">&#10003;</span></td>
               <td><span class="cross">&#10005;</span></td>
               <td><span class="cross">&#10005;</span></td>
@@ -369,7 +390,7 @@
               <td><span class="check">&#10003;</span></td>
             </tr>
             <tr>
-              <td>Prioriza pelo peso na sua prova</td>
+              <td>Prioriza pela relevância do tema na sua prova</td>
               <td class="highlight-col"><span class="check">&#10003;</span></td>
               <td><span class="cross">&#10005;</span></td>
               <td><span class="partial">manual</span></td>
@@ -406,34 +427,49 @@
     </div>
   </section>
 
-  <!-- ==================== NÚMEROS ==================== -->
-  <section class="section section-alt" id="numeros">
+  <!-- ==================== INSTITUIÇÕES ==================== -->
+  <section class="section section-alt" id="instituicoes">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-label">Baseado em ciência</span>
-        <h2 class="section-title">Os algoritmos que usamos já foram testados em milhões de revisões</h2>
-        <p class="section-subtitle">Estes são resultados de pesquisas publicadas sobre os modelos matemáticos por trás do OráculoMed — não do nosso sistema em si, mas da ciência que o fundamenta.</p>
+        <span class="section-label">A ciência por trás</span>
+        <h2 class="section-title">As instituições que fundamentam o OráculoMed</h2>
+        <p class="section-subtitle">Os modelos matemáticos que movem a ferramenta vêm de pesquisas publicadas em algumas das instituições mais respeitadas do mundo. O OráculoMed junta tudo isso em um lugar só, de maneira fácil e acessível.</p>
       </div>
-      <div class="stats-grid">
-        <div class="stat fade-up" style="--delay: 0.05s">
-          <div class="stat-value">-30%</div>
-          <div class="stat-label">Menos revisões para manter o mesmo nível de memorização</div>
-          <div class="stat-source">Benchmark do modelo de memória com 349 milhões de revisões reais</div>
+      <div class="institutions-grid">
+        <div class="institution-card fade-up" style="--delay: 0.1s">
+          <div class="institution-logo">
+            <img src="assets/carnegie.png" alt="Carnegie Mellon University" loading="lazy">
+          </div>
+          <p class="institution-field">Bayesian Knowledge Tracing</p>
+          <p class="institution-desc">Modelo padrão-ouro para rastrear o domínio do estudante. Proposto por Corbett &amp; Anderson em 1994 e adotado mundialmente em sistemas de tutoria inteligente.</p>
         </div>
-        <div class="stat fade-up" style="--delay: 0.1s">
-          <div class="stat-value">99,6%</div>
-          <div class="stat-label">Dos estudantes têm melhor resultado com o modelo que usamos vs. o tradicional</div>
-          <div class="stat-source">Comparativo em 9.999 coleções de estudantes reais</div>
+        <div class="institution-card fade-up" style="--delay: 0.15s">
+          <div class="institution-logo">
+            <img src="assets/Berkeley.png" alt="UC Berkeley" loading="lazy">
+          </div>
+          <p class="institution-field">Knowledge Tracing</p>
+          <p class="institution-desc">Extensões do BKT publicadas por pesquisadores de Berkeley aprimoraram a precisão na predição de desempenho em sistemas educacionais adaptativos.</p>
         </div>
-        <div class="stat fade-up" style="--delay: 0.15s">
-          <div class="stat-value">100%</div>
-          <div class="stat-label">Da taxonomia coberta — nenhum tema da sua prova fica de fora</div>
+        <div class="institution-card fade-up" style="--delay: 0.2s">
+          <div class="institution-logo">
+            <img src="assets/UCSanDiego.png" alt="UC San Diego" loading="lazy">
+          </div>
+          <p class="institution-field">Spacing Effect</p>
+          <p class="institution-desc">Meta-análise de Cepeda et al. (2006) que consolidou o efeito de espaçamento — distribuir o estudo no tempo aumenta drasticamente a retenção de longo prazo.</p>
         </div>
-        <div class="stat fade-up" style="--delay: 0.2s">
-          <div class="stat-value">0</div>
-          <div class="stat-label">Decisões que você precisa tomar sobre o que revisar ou quando</div>
+        <div class="institution-card fade-up" style="--delay: 0.25s">
+          <div class="institution-logo institution-logo-dual">
+            <img src="assets/MIT.png" alt="MIT" loading="lazy">
+            <span class="institution-logo-sep">&amp;</span>
+            <img src="assets/Harvard.png" alt="Harvard" loading="lazy">
+          </div>
+          <p class="institution-field">Ciência Cognitiva &amp; Educação Médica</p>
+          <p class="institution-desc">Pesquisas sobre otimização de aprendizado, decaimento de memória e aplicação de repetição espaçada na formação de médicos — o alicerce científico da ferramenta.</p>
         </div>
       </div>
+      <p class="institutions-note fade-up" style="--delay: 0.3s">
+        Quer ver os estudos e papers completos? <a href="nerds.html">Acesse a página técnica</a>
+      </p>
     </div>
   </section>
 
@@ -450,7 +486,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
           </div>
           <h3>Nasceu da frustração real</h3>
-          <p>O OráculoMed foi criado por estudantes que estão passando pela mesma ansiedade que você no estudo para entrar na residência. Sabemos o que é estudar sem direção.</p>
+          <p>O OráculoMed foi criado por estudantes que estão passando pela mesma ansiedade que você no preparativo para a residência médica. Sabemos o que é estudar sem direção.</p>
         </div>
         <div class="trust-card fade-up" style="--delay: 0.2s">
           <div class="trust-icon">
@@ -486,13 +522,234 @@
   <!-- CTA intermediário -->
   <div class="mini-cta fade-up">
     <div class="container mini-cta-inner">
-      <p>Personalizado. Baseado em ciência. Acesso antecipado aberto e gratuito.</p>
+      <p>Automático. Baseado em ciência. Acesso antecipado aberto e gratuito.</p>
       <a href="#cta" class="btn btn-primary">Garantir minha vaga</a>
     </div>
   </div>
 
+  <!-- BEGIN: Custo da Reprovação -->
+  <section class="section section-alt cost-section" id="custo">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Math da residência</span>
+        <h2 class="section-title">Reprovar custa <span class="text-gradient">R$ 53.000</span>. No mínimo.</h2>
+        <p class="section-subtitle">Não é exagero. É conta básica de quem já passou por isso:</p>
+      </div>
+      <div class="cost-grid">
+        <div class="cost-card fade-up" style="--delay: 0.1s">
+          <div class="cost-value">R$ 48.000</div>
+          <p class="cost-label">Um ano de salário de residente que você deixa de receber</p>
+        </div>
+        <div class="cost-card fade-up" style="--delay: 0.15s">
+          <div class="cost-value">R$ 5.000+</div>
+          <p class="cost-label">Mais um ano de cursinho preparatório</p>
+        </div>
+        <div class="cost-card fade-up" style="--delay: 0.2s">
+          <div class="cost-value">Incalculável</div>
+          <p class="cost-label">Desgaste emocional e adiar a vida por mais 12 meses</p>
+        </div>
+      </div>
+      <div class="cost-total fade-up" style="--delay: 0.25s">
+        <div class="cost-total-divider"></div>
+        <p class="cost-total-label">Total real da reprovação:</p>
+        <p class="cost-total-value text-gradient">R$ 53.000+</p>
+        <p class="cost-total-note">
+          O OráculoMed vai custar <strong>R$ 179,90/mês</strong> quando sair da versão beta. Isso é <strong>menos de 0,3%</strong> do que custa perder um ano de residência.
+          Quem entra agora, <strong>enquanto a versão beta está aberta, usa tudo de graça</strong> — e ainda trava <strong>44% de desconto vitalício</strong> (R$ 99,90/mês) no lançamento oficial.
+        </p>
+        <a href="#cta" class="btn btn-primary btn-lg" aria-label="Garantir minha vaga no acesso antecipado">
+          Garantir minha vaga
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- END: Custo da Reprovação -->
+
+  <!-- BEGIN: Stack de Valor -->
+  <section class="section stack-section" id="stack">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">O que você recebe</span>
+        <h2 class="section-title">R$ 600+/mês em valor entregue. Hoje, por <span class="text-gradient">R$ 0</span>.</h2>
+        <p class="section-subtitle">Estimativas baseadas em ferramentas, planilhas e mentorias que você pagaria separado para ter o mesmo resultado. Quem entra na <strong>turma pioneira</strong> leva tudo de graça durante a versão beta — e trava <strong>44% de desconto vitalício</strong> no lançamento oficial.</p>
+      </div>
+      <div class="stack-list">
+        <div class="stack-item fade-up" style="--delay: 0.05s">
+          <div class="stack-item-num">I</div>
+          <div class="stack-item-body">
+            <div class="stack-item-header">
+              <h3>Sessão Inteligente com Plano de Revisões</h3>
+              <span class="stack-item-tag">Core</span>
+            </div>
+            <p>A cada sessão, o sistema entrega um <strong>plano de revisões em questões e minutos</strong>, calculado para ser <strong>a melhor decisão possível naquele momento</strong>. Considera sua <strong>memória</strong> (quando cada tema vai escapar), seu <strong>domínio</strong>, a <strong>relevância</strong> (peso na banca + centralidade do tópico) e o <strong>tempo disponível</strong> — maximizando a eficiência de cada minuto de estudo.</p>
+          </div>
+          <div class="stack-item-value stack-item-price">R$ 200+/mês</div>
+        </div>
+        <div class="stack-item fade-up" style="--delay: 0.1s">
+          <div class="stack-item-num">II</div>
+          <div class="stack-item-body">
+            <div class="stack-item-header">
+              <h3>Dashboard Principal</h3>
+            </div>
+            <p>Visão centralizada com índice de prontidão para sua prova, meta diária, progresso semanal, streaks e recuperação de sessões interrompidas.</p>
+          </div>
+          <div class="stack-item-value stack-item-price">R$ 90+/mês</div>
+        </div>
+        <div class="stack-item fade-up" style="--delay: 0.15s">
+          <div class="stack-item-num">III</div>
+          <div class="stack-item-body">
+            <div class="stack-item-header">
+              <h3>Análise de Desempenho</h3>
+            </div>
+            <p>Radar de domínio por especialidade, evolução de domínio ao longo do tempo, temas em risco, heatmap de consistência e distribuição de tipos de sessão.</p>
+          </div>
+          <div class="stack-item-value stack-item-price">R$ 100+/mês</div>
+        </div>
+        <div class="stack-item fade-up" style="--delay: 0.2s">
+          <div class="stack-item-num">IV</div>
+          <div class="stack-item-body">
+            <div class="stack-item-header">
+              <h3>Visão Geral de Tópicos</h3>
+              <span class="stack-item-tag">Gestão</span>
+            </div>
+            <p>Tabela completa de todos os seus temas com métricas de retenção e domínio, histórico por tema e opção de criar temas customizados.</p>
+          </div>
+          <div class="stack-item-value stack-item-price">R$ 50+/mês</div>
+        </div>
+        <div class="stack-item fade-up" style="--delay: 0.25s">
+          <div class="stack-item-num">V</div>
+          <div class="stack-item-body">
+            <div class="stack-item-header">
+              <h3>Modo Turbo</h3>
+              <span class="stack-item-tag">Core</span>
+            </div>
+            <p>Preparação intensiva nas semanas finais antes da prova. O sistema ajusta a intensidade e as prioridades automaticamente à medida que a data se aproxima.</p>
+          </div>
+          <div class="stack-item-value stack-item-price">R$ 150+/mês</div>
+        </div>
+        <div class="stack-item fade-up" style="--delay: 0.3s">
+          <div class="stack-item-num">VI</div>
+          <div class="stack-item-body">
+            <div class="stack-item-header">
+              <h3>Configurações Personalizadas</h3>
+              <span class="stack-item-tag">Gestão</span>
+            </div>
+            <p>Meta diária de estudo, nível de dedicação (casual, sério ou intenso), seleção de prova-alvo e data de exame — tudo ajustável a qualquer momento.</p>
+          </div>
+          <div class="stack-item-value stack-item-price">R$ 40+/mês</div>
+        </div>
+      </div>
+      <div class="stack-total fade-up" style="--delay: 0.35s">
+        <div class="stack-total-divider"></div>
+        <div class="stack-total-row stack-total-highlight">
+          <span class="stack-total-label">Valor total entregue (estimado):</span>
+          <span class="stack-total-sum">R$ 600+/mês</span>
+        </div>
+        <div class="stack-total-row">
+          <span class="stack-total-label">Preço cheio do OráculoMed no lançamento:</span>
+          <span class="stack-total-strike">R$ 179,90/mês</span>
+        </div>
+        <div class="stack-total-row">
+          <span class="stack-total-label">Preço vitalício da turma pioneira:</span>
+          <span class="stack-founder-price text-gradient">R$ 99,90/mês</span>
+        </div>
+        <div class="stack-total-row stack-total-big">
+          <span class="stack-total-label">Durante a versão beta:</span>
+          <span class="stack-total-final text-gradient">R$ 0</span>
+        </div>
+        <p class="stack-disclaimer">
+          Você recebe mais de <strong>R$ 600/mês em valor real</strong> (estimativa) por <strong>R$ 0</strong> durante a turma pioneira. Quando a versão beta fechar, você trava <strong>R$ 99,90/mês vitalício</strong> — enquanto novos usuários pagarão R$ 179,90/mês.
+        </p>
+        <a href="#cta" class="btn btn-primary btn-xl" style="margin-top: 24px" aria-label="Quero minha vaga antes que acabe">
+          Quero minha vaga antes que acabe
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- END: Stack de Valor -->
+
+  <!-- BEGIN: Ganhe sendo Beta -->
+  <section class="section section-alt beta-bonus-section" id="ganhe">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Por que entrar agora?</span>
+        <h2 class="section-title">A turma pioneira ganha 3 coisas que <span class="text-gradient">ninguém mais vai ter</span></h2>
+        <p class="section-subtitle">Você nos ajuda a validar a ferramenta. A gente te devolve recompensas reais — começando por um iPad.</p>
+      </div>
+
+      <!-- iPad Giveaway — HERO CARD -->
+      <div class="ipad-giveaway fade-up" style="--delay: 0.05s">
+        <div class="ipad-giveaway-inner">
+          <div class="ipad-giveaway-content">
+            <div class="ipad-giveaway-badge">
+              <span class="ipad-pulse"></span>
+              Sorteio exclusivo · Turma Pioneira
+            </div>
+            <h3 class="ipad-giveaway-title">
+              Vamos sortear <span class="text-gradient">um iPad 11"</span> entre os alunos da turma pioneira
+            </h3>
+            <p class="ipad-giveaway-desc">
+              Todo aluno ativo da turma pioneira do OráculoMed entra automaticamente no sorteio. Não precisa fazer nada além de usar a ferramenta. O sorteio acontece ao final da versão beta — <strong>e quanto mais cedo você entra, mais tempo você acumula chances</strong>.
+            </p>
+            <div class="ipad-giveaway-bullets">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 1 iPad 11" será sorteado</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Todo aluno ativo participa</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Entrar agora = mais chances</span>
+            </div>
+            <a href="#cta" class="btn btn-primary btn-lg ipad-cta" aria-label="Quero concorrer ao iPad">
+              Quero concorrer ao iPad
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+          <div class="ipad-giveaway-visual">
+            <div class="ipad-mockup">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" fill="none">
+                <rect x="10" y="10" width="220" height="300" rx="18" fill="#1A1A1A" stroke="#2A2A2A" stroke-width="2"/>
+                <rect x="20" y="24" width="200" height="272" rx="4" fill="#F7F8FA"/>
+                <circle cx="120" cy="303" r="4" fill="#2A2A2A"/>
+                <rect x="40" y="60" width="160" height="16" rx="3" fill="#4A0081" opacity="0.15"/>
+                <rect x="40" y="88" width="120" height="10" rx="2" fill="#9CA3AF" opacity="0.4"/>
+                <rect x="40" y="120" width="160" height="60" rx="8" fill="#F0E6F5" stroke="#4A0081" stroke-width="1" opacity="0.5"/>
+                <rect x="40" y="195" width="75" height="45" rx="6" fill="#E6F5F2" stroke="#0D9488" stroke-width="1" opacity="0.5"/>
+                <rect x="125" y="195" width="75" height="45" rx="6" fill="#F0E6F5" stroke="#4A0081" stroke-width="1" opacity="0.5"/>
+                <rect x="40" y="255" width="160" height="8" rx="2" fill="#0D9488" opacity="0.3"/>
+                <rect x="40" y="270" width="100" height="6" rx="2" fill="#9CA3AF" opacity="0.3"/>
+              </svg>
+              <div class="ipad-price-tag">iPad 11"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="beta-bonus-grid">
+        <div class="beta-bonus-card fade-up" style="--delay: 0.15s">
+          <div class="beta-bonus-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="beta-bonus-tag">Programa</div>
+          <h3>Vire Embaixador OráculoMed</h3>
+          <p>Alunos pioneiros que se destacarem podem virar embaixadores do produto e receber <strong>comissão por cada indicação</strong> que virar assinante pago.</p>
+        </div>
+        <div class="beta-bonus-card fade-up" style="--delay: 0.2s">
+          <div class="beta-bonus-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+          </div>
+          <div class="beta-bonus-tag">Desconto</div>
+          <h3>44% OFF vitalício no lançamento</h3>
+          <p>Quando o OráculoMed sair da versão beta, você paga <strong>R$ 99,90/mês</strong> para sempre. Novos usuários pagarão R$ 179,90/mês.</p>
+        </div>
+      </div>
+      <p class="beta-bonus-disclaimer fade-up" style="--delay: 0.25s">
+        Benefícios válidos para alunos da turma pioneira ativos. Sorteio do iPad ao final da versão beta. Programa de embaixadores sujeito a seleção e regras específicas.
+      </p>
+    </div>
+  </section>
+  <!-- END: Ganhe sendo Beta -->
+
   <!-- ==================== FAQ ==================== -->
-  <section class="section section-alt" id="faq">
+  <section class="section" id="faq">
     <div class="container">
       <div class="section-header fade-up">
         <span class="section-label">Dúvidas</span>
@@ -501,11 +758,11 @@
       <div class="faq-list">
         <details class="faq-item fade-up" style="--delay: 0.05s">
           <summary>O OráculoMed é gratuito?</summary>
-          <p>O acesso antecipado é 100% gratuito, sem cartão de crédito. Quando o produto sair do acesso antecipado, haverá planos pagos — mas quem entrar agora será avisado com antecedência e terá condições especiais.</p>
+          <p>Enquanto a versão beta estiver aberta, o acesso é 100% gratuito, sem cartão de crédito. Quando o OráculoMed sair da versão beta, a ferramenta custará R$ 179,90/mês — mas quem entrar agora trava <strong>44% de desconto vitalício</strong> e paga <strong>R$ 99,90/mês</strong> para sempre.</p>
         </details>
         <details class="faq-item fade-up" style="--delay: 0.1s">
-          <summary>O OráculoMed substitui meu cursinho?</summary>
-          <p>Não. O OráculoMed não fornece aulas nem apostilas. Ele se conecta ao material que você já usa (cursinho, apostila, banco de questões) e monta o plano de exercícios e revisões por cima. É um complemento, não uma substituição.</p>
+          <summary>O OráculoMed é um banco de questões? Tem aulas?</summary>
+          <p><strong>Não.</strong> O OráculoMed <strong>não é um banco de questões</strong>, não tem aulas, não tem apostilas, não tem conteúdo. Ele é uma <strong>ferramenta de decisão</strong>: se conecta ao material que você já usa (cursinho, apostila, banco de questões) e te diz exatamente o que revisar ali dentro em cada sessão. É um complemento ao seu método atual, não uma substituição.</p>
         </details>
         <details class="faq-item fade-up" style="--delay: 0.15s">
           <summary>Para quais provas funciona?</summary>
@@ -518,6 +775,10 @@
         <details class="faq-item fade-up" style="--delay: 0.25s">
           <summary>Funciona no celular?</summary>
           <p>Sim. Funciona direto no navegador — celular, tablet ou computador. Sem precisar baixar nada.</p>
+        </details>
+        <details class="faq-item fade-up" style="--delay: 0.27s">
+          <summary>Comecei a estudar faz tempo. Posso usar o OráculoMed mesmo assim?</summary>
+          <p>Sim. Você pode registrar sessões de estudo mais antigas e já começar com sugestões calibradas de acordo com o <strong>decaimento da sua memória</strong> naquele tema. Quanto mais histórico você registra, mais precisa fica a decisão do sistema desde o primeiro dia — não precisa "começar do zero".</p>
         </details>
         <details class="faq-item fade-up" style="--delay: 0.3s">
           <summary>Como o sistema sabe o que eu preciso revisar?</summary>
@@ -540,9 +801,13 @@
     <div class="container">
       <div class="cta-card fade-up">
         <div class="cta-orb"></div>
-        <div class="cta-badge">Acesso antecipado aberto — vagas limitadas</div>
-        <h2 class="cta-title">Chega de estudar no escuro.<br>Tenha um plano feito pra você.</h2>
-        <p class="cta-text">O OráculoMed monta seu plano de exercícios e revisões — personalizado à sua prova, ao seu material e ao seu ritmo. Entre no acesso antecipado gratuito enquanto há vagas.</p>
+        <div class="cta-badge">Turma Pioneira · Residência 2027</div>
+        <div class="counter-mini">
+          <span class="counter-mini-number" id="beta-counter-mini">50</span>
+          <span class="counter-mini-text">de 300 vagas preenchidas</span>
+        </div>
+        <h2 class="cta-title">Chega de estudar no escuro.<br>Use uma ferramenta que decide por você.</h2>
+        <p class="cta-text">O OráculoMed decide automaticamente o que revisar em cada sessão — adaptado à sua prova, ao seu material e ao seu ritmo. Entre no acesso antecipado gratuito enquanto há vagas.</p>
         <div class="cta-steps">
           <p class="cta-steps-title">Passo a passo:</p>
           <ol>
@@ -580,7 +845,7 @@
           <img src="assets/logo.svg?v=3" alt="OráculoMed" class="nav-logo-icon">
           <span><span style="color:#4A0081">Oráculo</span><span style="color:#0D9488">Med</span></span>
         </div>
-        <p class="footer-tagline">Plano personalizado de exercícios e revisões para residência médica. De estudantes, para estudantes.</p>
+        <p class="footer-tagline">A ferramenta inteligente que decide o que revisar no seu preparativo para a residência médica. De estudantes, para estudantes.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
@@ -602,6 +867,6 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#FFF"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.352 0-4.55-.707-6.383-1.92l-.444-.296-2.96.992.992-2.96-.296-.444A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
   </a>
 
-  <script src="script.js?v=7"></script>
+  <script src="script.js?v=9"></script>
 </body>
 </html>
